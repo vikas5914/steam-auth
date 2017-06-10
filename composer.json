@@ -1,0 +1,20 @@
+{
+    "name": "vikas5914/steam-auth",
+    "description": "A simple PHP Steam login and User Detail package",
+    "keywords": ["steam", "steam-login", "steam-auth","steam login", "steam auth", "steam-user", "steam user"],	
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vikas Kapadiya",
+            "email": "vikas@kapadiya.net",
+            "homepage": "https://www.kapadiya.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    	"php": ">=5.4.0"
+    },
+     "autoload": {
+        "psr-4": { "Vikas5914\\": "src/" }
+    }
+}
