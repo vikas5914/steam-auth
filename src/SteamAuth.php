@@ -4,7 +4,6 @@ namespace Vikas5914;
 /**
  * SteamAuth Class
  *
- * @category  Database Access
  * @package   SteamAuth
  * @author    Vikas Kapadiya <vikas@kapadiya.net>
  * @author    BlackCetha
