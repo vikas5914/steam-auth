@@ -140,6 +140,7 @@ class SteamAuth
         // Return our final value
         return preg_match("#is_valid\s*:\s*true#i", $result) == 1 ? $steamID64 : '';
     }
+    
     public function logout()
     {
         if (!$this->loggedIn()) {
@@ -157,10 +158,12 @@ class SteamAuth
         // If the logout-page is set, go there
         return true;
     }
+    
     public function loggedIn()
     {
-        return (isset($_SESSION["steamdata"]["steamid"]) && $_SESSION["steamdata"]["steamid"] != "") ? true : false;
+        return (isset($_SESSION["steamdata"]["steamid"]) && $_SESSION["steamdata"]["steamid"] != "");
     }
+    
     public function forceReload()
     {
         if (!isset($_SESSION["steamdata"]["steamid"])) {
@@ -178,6 +181,7 @@ class SteamAuth
         // Make user-data accessable through $steam->var
         return true;
     }
+    
     /**
      * Prints debug information about steamauth
      */
